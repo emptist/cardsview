@@ -13,7 +13,10 @@ Package.describe({
 Package.onUse(function(api) {
   api.versionsFrom('1.0.3.1');
   api.use(['coffeescript','mquandalle:jade','pcuci:bootcards'])
-  api.addFiles('jk1968:cardsview.js');
+  api.addFiles(['jk1968:cardsview.js','cards/cardView/body.jade',
+    'cards/cardView/card.jade','cards/cardView/cardHeading.jade',
+    'cards/cardView/footer.jade','cards/cardleft.jade','cards/cardmiddle.jade',
+    'cards/cardright.jade','cards/card.jade','cards/navbar.jade','cards/home.jade']);
 });
 
 Package.onTest(function(api) {
